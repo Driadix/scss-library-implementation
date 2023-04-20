@@ -1,0 +1,50 @@
+@use './breakpoints' as *;
+@use 'sass:math';
+
+$grid-columns: 12;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin col($value, $size, $columns) {
+  .col-#{$value}-#{$size} {
+    flex-grow: 0;
+    width: math.div($value * 100%, $columns);
+  }
+}
+
+@mixin cols($size) {
+    @for $i from 1 through $grid-columns {
+      @include col($i, $size, $grid-columns);
+    }
+}
+
+@include xs {
+  @include cols("xs");
+}
+
+@include sm {
+  @include cols("sm");
+}
+
+@include md {
+  @include cols("md");
+}
+
+@include lg {
+  @include cols("lg");
+}
+
+@include xl {
+  @include cols("xl");
+}
