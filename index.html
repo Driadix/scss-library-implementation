@@ -8,32 +8,45 @@
   <title>Document</title>
 </head>
 <body class="bg-primary">
+
+  <nav class="navbar bg-secondary text-black mb-2">
+    <div class="container">
+    <h2 class="navbar-title">Navbar</h2>
+    <ul class="navbar-options gap-1">
+      <li><a href="#" class="navbar-option">Nav option 1</a></li>
+      <li><a href="#" class="navbar-option">Nav option 2</a></li>
+      <li><a href="#" class="navbar-option">Nav option 3</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <h2 style="text-align: center;">Cards section</h2>
   <div class="container">
   <div class="row gap-2 justify-center align-center">
     <div class="col-12-xs col-5-sm col-3-xl">
-      <div class="card bg-secondary">
+      <div class="card bg-error">
       <h2 class="card-title">card title 1</h2>
       <p class="card-body">
         Card some text 1
-        <a href="#" class="text-accent">card link</a>
+        <a href="#" class="text-secondary-light-1 text-hover-primary">card link</a>
       </p>
     </div>
   </div>
   <div class="col-12-xs col-5-sm col-3-xl">
-    <div class="card bg-secondary">
+    <div class="card bg-warning">
     <h2 class="card-title">card title 1</h2>
     <p class="card-body">
       Card some text 1
-      <a href="#" class="text-accent">card link</a>
+      <a href="#" class="text-primary-dark-4 text-hover-secondary">card link</a>
     </p>
   </div>
 </div>
 <div class="col-12-xs col-5-sm col-3-xl">
-  <div class="card bg-secondary">
+  <div class="card bg-success">
   <h2 class="card-title">card title 1</h2>
   <p class="card-body">
     Card some text 1
-    <a href="#" class="text-accent">card link</a>
+    <a href="#" class="text-white text-hover-black">card link</a>
   </p>
 </div>
 </div>
@@ -42,11 +55,21 @@
   <h2 class="card-title">card title 1</h2>
   <p class="card-body">
     Card some text 1
-    <a href="#" class="text-accent">card link</a>
+    <a href="#" class="text-accent text-hover-error-dark-4">card link</a>
   </p>
 </div>
 </div>
 
+</div>
+
+<h2 style="text-align: center;">Buttons section</h2>
+<div class="display-f align-center justify-center grow-0 shrink-0 wrap-1" style="gap: 4px">
+<button class="btn-secondary">Button 1</button>
+<button class="btn-error">Button 2</button>
+<button class="btn-complement-warning">Button 1c</button>
+<button class="btn-complement-accent">Button 2c</button>
+<button class="btn-outlined-error">Button 1o</button>
+<button class="btn-outlined-success">Button 2o</button>
 </div>
 </div>
 </body>

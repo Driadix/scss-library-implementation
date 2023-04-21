@@ -8,6 +8,8 @@ $colors: (
   "error": v.$error,
   "warning": v.$warning,
   "info": v.$info,
+  "black": v.$black,
+  "white": v.$white,
 );
 
 @each $key, $val in $colors {

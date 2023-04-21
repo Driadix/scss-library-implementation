@@ -1,0 +1,38 @@
+@use '../' as *;
+
+%flex-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar {
+  @extend %flex-layout;
+  padding: $base-padding $base-padding*2;
+  box-shadow: $base-box-shadow;
+
+  .navbar-title {
+    font-size: $font-size-lg;
+  }
+
+  .navbar-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-option {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: lighten(black, 40%);
+    }
+  }
+
+  .container {
+    @extend %flex-layout;
+  }
+}

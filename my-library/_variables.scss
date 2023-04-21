@@ -1,23 +1,23 @@
-$primary: #fdf5df;
-$secondary: #5ebec4;
-$accent: #f92c85;
-$success: #009944;
-$error: #cf000f;
-$warning: #f0541e;
-$info: #63c0df;
-$black: black;
-$white: white;
+$primary: #fdf5df !default;
+$secondary: #5ebec4 !default;
+$accent: #f92c85 !default;
+$success: #009944 !default;
+$error: #cf000f !default;
+$warning: #f0541e !default;
+$info: #63c0df !default;
+$black: black !default;
+$white: white !default;
 
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
 
-$base-border-radius: 20px;
-$base-border-thickness: 1px;
+$base-border-radius: 20px !default;
+$base-border-thickness: 1px !default;
 
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
 
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
